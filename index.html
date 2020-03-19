@@ -1,143 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Beverly's Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container navbar">
-<header>
-    <div class="lgo">
-        <h1>Beverly</h1>
+      <header>
+        <div class="lgo">
+          <h1>Beverly</h1>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#about">About</a>
+              <a href="#skills">Skills</a>
+              <a href="#projects">Projects</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </div>
-<nav>
-    <ul>
-        <li>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-        </li>
-    </ul>
-</nav>
-</header>
-    </div>
-<div class='container main-info-section'>
-    <div class="text">
+    <div class="container main-info-section">
+      <div class="text">
         <h1>
-            <span class='name'>Hello,</span> 
-            <span>my</span> 
-            <span>name</span>
-            <span> is </span>
-           <span> Beverly</span>
+          <span class="name">Hello,</span><br />
+          <span>my</span>
+          <span>name</span><br />
+          <span> is </span>
+          <span> Beverly</span>
         </h1>
-        <p>HTML / CSS / JavaScript / React / React Native / Bootstrap</p>
+        <br />
+        <p>Front-end Web & Cross Platform Mobile App Developer</p>
         <a href="#contact">Contact Me</a>
+      </div>
+      <div class="profile-image">
+        <img src="images/blue.jpg" alt="" />
+      </div>
     </div>
-<div class="profile-image">
-    <img src="images/one.jpg" alt="">
-</div>
-</div>
-<!-- About Me -->
-<div class="container about" id='about'>
-    <h1>About Me</h1>
-    <div class='about-me-info'>
+    <!-- About Me -->
+    <div class="container about" id="about">
+      <h1>About Me</h1>
+      <div class="about-me-info">
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cupiditate eos et porro? Expedita, dignissimos. Dolorem commodi culpa quam odio ut perferendis, eos ducimus quo exercitationem quidem natus architecto accusantium.
+          Continuously learning and working to improve, Beverly spends a lot of time in front of her laptop coding. She taught herself HTML and CSS before deciding to further her education at Nucamp bootcamp, and then Seattle Central. With those two resources, and the internet, she keeps pushing to hone her skills of making user-friendly, responsive websites.
         </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cupiditate eos et porro? Expedita, dignissimos. Dolorem commodi culpa quam odio ut perferendis, eos ducimus quo exercitationem quidem natus architecto accusantium.
-        </p>
-    </div>
-        <img src="images/four.jpg" alt="">
+       
+      </div>
+      <img src="images/m2.jpg" alt="" />
     </div>
 
-    <!-- Skills -->
-    <div class="container skills" id='skills'>
-        <h1>Skills</h1>
-        <p class='skills-info'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid tempore ullam aperiam veniam dignissimos maiores, dicta corporis delectus porro. Modi, quas error cupiditate rem non mollitia eveniet facilis laborum ex!
-        </p>
-    </div>
     <!-- Progress Bar -->
-        <div class="html">
-            <div class="tag-html">
-                <p>HTML</p>
-            </div>
-            <div class="progressbar">
-                <div class="bar-html"></div>
-        </div>
-        </div>
-        <div class="html">
-            <div class="tag-html">
-                <p>CSS</p>
-            </div>
-            <div class="progressbar">
-                <div class="bar-css"></div>
-            </div>
-        </div>
-        <div class="html">
-            <div class="tag-js">
-                <p>JS</p>
-            </div>
-            <div class="progressbar">
-                <div class="bar-js"></div>
-            </div>
-        </div>
-        <div class="html">
-            <div class="tag-react">
-                <p>React</p>
-            </div>
-            <div class="progressbar">
-                <div class="bar-react"></div>
-            </div>
-        </div>
+    <div class="skills" id="skills">
+      <h1>Skills</h1>
+      <span class="progress-title">Fundamentals</span>
+      <li>
+        <h3>HTML5</h3>
+        <span class="bar"><span class="html"></span></span>
+      </li>
+
+      <li>
+        <h3>CSS3</h3>
+        <span class="bar"><span class="css"></span></span>
+      </li>
+
+      <li>
+        <h3>JS</h3>
+        <span class="bar"><span class="js"></span></span>
+      </li>
+
+      <li>
+        <h3>Github</h3>
+        <span class="bar"><span class="gh"></span></span>
+      </li>
+    </div>
+<br>
+<div class="skills">
+<span class="progress-title">Frameworks</span>
+<li>
+    <h3>React</h3>
+    <span class="bar"><span class="react"></span></span>
+  </li>
+
+  <h3>React Native</h3>
+  <span class="bar"><span class="rn"></span></span>
+</li>
+
+      <li>
+        <h3>Bootstrap</h3>
+        <span class="bar"><span class="bs"></span></span>
+      </li>
+
+      
+    </div>
+</div>
+    <div class="container projects" id="projects">
+      <h1>Projects</h1>
+      <!-- <div class="projects-category">
+        <button id="bootstrap" class="active">
+          Bootstrap
+        </button>
+        <button id="react">React</button>
+        <button id="react-native">
+          React react-native
+        </button>
+      </div> -->
+      <div class="category-designing">
+        <a href="http://beverlymjames.com/projects/unionclub/"><img src="images/uct.PNG"/></a>
+        <p>Recreation of an exisiting site, Union Club Tacoma</p>
+        <!-- <a href=""><img src="images/one.jpg"/></a>
+        <a href=""><img src="images/three.jpg"/></a> -->
+      </div>
+    </div>
+    <!-- Connect functional contact form -->
+    <div class="container contact" id="contact">
+      <br />
+      <h1>Contact</h1>
+      <br />
+      <form>
+        <input type="text" name="name" placeholder="Full Name" />
+        <input type="email" placeholder="Email" />
+        <textarea
+          name="message"
+          cols="30"
+          row="10"
+          placeholder="Message"
+        ></textarea>
+        <input type="submit" />
+      </form>
     </div>
 
-<div class="container projects" id="projects">
-    <h1>Projects</h1>
-<div class="projects-category">
-    <button id="bootstrap" class='active' onclick="showRequiredCategory(this)">Bootstrap</button>
-    <button id="react" onclick="showRequiredCategory(this)">React</button>
-    <button id='react-native' onclick="showRequiredCategory(this)">React react-native</button>
-</div>
-<div class="category-designing showCategory">
-    <a href=''><img src='images/four.jpg'></a>
-    <a href=''><img src='images/one.jpg'></a>
-    <a href=''><img src='images/three.jpg'></a>
-
-</div>
-<div class="category-animation hideCategory">
-    <a href=''><img src='images/logo.png'></a>
-    <a href=''><img src=''></a>
-    <a href=''><img src=''></a>
-
-</div>
-</div>
-<div class="container contact" id='contact'>
-    <h1>Contact</h1>
-    <form>
-        <input type="text" name='name' placeholder="Full Name">
-        <input type="email" placeholder="Email">
-        <textarea name='message' cols='30' row='10' placeholder='Message'></textarea>
-        <input type="submit">
-    </form>
-</div>
-
-<footer>
-    <hr>
-    <p>2020 Copyright. All Rights Reserved</p>
-</footer>
-<script src='js/ScrollMagic.min.js'></script>
-<script src='js/animation.gasp.min.js'></script>
-<script src='js/TimelineLite.min.js'></script>
-<script src='js/TweenMax.min.js'></script>
-<script src='js/CSSPlugin.min.js'></script>
-<script src='js/script.js'></script>
-
-
-</body>
+    <footer>
+      <hr />
+      <p>2020 Copyright. All Rights Reserved</p>
+    </footer>
+  </body>
 </html>

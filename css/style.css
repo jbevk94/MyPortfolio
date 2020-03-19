@@ -1,14 +1,29 @@
+/* Color Schemes
+1. Elegant
+#7395ae;
+#5d5c61;
+#379683;
+#557a95;
+#b1a229;
+
+2.Striking
+#0b0c10
+#1f2833
+#c5c6c7
+#66fcf1
+#45a29e
+*/
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
+  list-style: none;
 }
-
-html {
-  scroll-behavior: smooth;
+ 
+body {
+  background-color: #1f2833;
 }
-
 .container {
   padding: 0 100px 0 100px;
 }
@@ -18,12 +33,16 @@ nav ul,
 .project-category {
   display: flex;
   flex-wrap: wrap;
+  
   justify-content: space-between;
 }
 
-body {
-  background-color: #252627;
+.navbar {
+  background-color: #181818;
+  
 }
+
+
 
 header {
   display: flex;
@@ -32,8 +51,8 @@ header {
   padding: 20px 0;
 }
 
-.navbar {
-  background-color: #181818;
+header a {
+  padding: 15px;
 }
 
 header h1,
@@ -43,7 +62,7 @@ header a,
 .skills h1,
 .projects h1,
 .contact h1 {
-  color: #707070;
+  color: #66fcf1;
 }
 
 li {
@@ -64,7 +83,7 @@ a {
 .main-info-section {
   height: calc(100vh - 81.6px);
 }
-/* text */
+/* Greeting */
 .text {
   margin-top: 120px;
 }
@@ -74,24 +93,21 @@ a {
   font-size: 3rem;
   cursor: context-menu;
 }
-/* name lettering */
+
 .text span {
   display: inline-block;
 }
 
 span:hover {
-  color: #48cfad;
+  color: #83888d;
   transition: all 0.5s;
 }
 
 span.name {
-  color: #ed5565;
+  color: #45a29e;
 }
 
-/* span.m-left{
-    margin-left: -10px;
-} */
-
+/* Contact Me Button */
 .text p {
   letter-spacing: 3px;
   word-spacing: 10px;
@@ -101,8 +117,8 @@ span.name {
 .text a {
   padding: 12px 25px;
   background-color: none;
-  border: 3px solid #ed5565;
-  color: #ed5565;
+  border: 3px solid #000000;
+  color: #b1a296;
   font-size: 0.8rem;
   letter-spacing: 4px;
   position: relative;
@@ -115,10 +131,11 @@ span.name {
 .text a:hover {
   color: #fff;
 }
-/* contact button */
+
+
 .text a::before {
   content: "";
-  background-color: #edd565;
+  background-color: #45a29e;
   position: absolute;
   left: 0;
   top: 0;
@@ -131,12 +148,15 @@ span.name {
 .text a:hover::before {
   height: 100%;
 }
-
+/* contact ends button */
+/* Greeting Ends */
 .profile-image img {
   width: 450px;
-  margin-top: 50px;
+  margin-top: 55px;
+  border-radius: 25px;
+  opacity: 0.8;
 }
-/* about */
+/* about starts */
 .about {
   height: 100vh;
   margin-top: 100px;
@@ -146,20 +166,21 @@ span.name {
 .projects h1 {
   font-size: 10rem;
   z-index: 0;
-  opacity: 0.1;
+  opacity: 0.7;
 }
 
 .about-me-info {
-  max-width: 900px;
+  max-width: 800px;
   background-color: #252627;
   box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.25);
   padding: 50px;
   position: relative;
-  top: -70px;
+  top: 30px;
   left: 50%;
   right: 50%;
   transform: translateX(-50%);
   z-index: 1;
+  border-radius: 25px;
 }
 
 .about-me-info p {
@@ -173,84 +194,19 @@ span.name {
 }
 
 .about img {
-  width: 300px;
+  width: 280px;
   position: relative;
-  top: -300px;
+  border-radius: 60px;
   left: calc(100% - 100px);
   right: calc(100% - 100px);
   transform: translateX(calc(-100% + 100px));
   
 }
+/* About Ends */
 
-.skills {
-  height: 100vh;
-}
 
-.skills h1,
-.contact h1 {
-  text-align: right;
-  font-size: 10rem;
-  opacity: 0.1;
-}
 
-.skills-info {
-  font-size: 1.4rem;
-  color: #bebebe;
-  position: relative;
-  max-width: 800px;
-  left: 50%;
-  right: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.html {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-div[class^="tag-"] {
-  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
-  width: 120px;
-  height: 30px;
-  background-color: #1785a7;
-  margin-right: 30px;
-}
-
-div[class^="tag-"] p {
-  color: #fff;
-  text-align: left;
-  padding-left: 10px;
-  font-size: 1.1rem;
-  padding-top: 3px;
-}
-
-.progressbar {
-  position: relative;
-  width: 600px;
-  height: 20px;
-  border: 2px solid #48cfad;
-  border-radius: 20px;
-  margin-top: 7px;
-}
-
-div[class^="bar-"] {
-  position: absolute;
-  background-color: #48cfad;
-  height: 10px;
-  border-radius: 20px;
-  margin: 2.7px;
-}
-
-.bar-html,
-.bar-css,
-.bar-js,
-.bar-react {
-  width: calc(0-6px);
-}
+/* Projects Start */
 
 .projects-category button {
   text-transform: capitalize;
@@ -263,6 +219,11 @@ div[class^="bar-"] {
   background-color: #252627;
   outline: none;
   cursor: pointer;
+}
+
+.category-designing p {
+  color: white;
+  font-size: 24px;
 }
 
 div[class^="category-"] {
@@ -291,18 +252,16 @@ button.active {
   justify-self: center;
 }
 
-div.hideCategory {
-  display: none;
-}
-
-.showCategory {
-  display: block;
-}
+/* Projects Ends */
 
 .contact {
   margin-top: 50px;
 }
 /* form */
+
+form{
+  padding-top: 60px;
+}
 form input,
 form textarea {
   display: block;
@@ -334,4 +293,162 @@ footer hr {
 
 footer p {
   text-align: center;
+}
+
+
+/* New Progress Bar */
+
+.skills{
+  width: 90%;
+  margin: 60px auto;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.skills li{
+  margin: 20px 0;
+}
+
+.skills h1,
+.contact h1 {
+  text-align: right;
+  font-size: 10rem;
+  opacity: 0.7;
+  padding-top: 100px;
+  padding-bottom: 100px;
+} 
+.skills-info {
+  font-size: 1.4rem;
+  color: #bebebe;
+  position: relative;
+  max-width: 800px;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+.progress-title{
+  font-size: 8rem;
+  color:#45a29e;
+}
+
+.progress-title:hover {
+  color: whitesmoke;
+}
+
+.bar{
+  background: rgb(0, 0, 0);
+  display: block;
+  height: 2px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span{
+  height: 2px;
+  float: left;
+  background: #ffffff;
+}
+/* Skill bar width */
+.html{
+  width: 90%;
+  animation: html 2s;
+}
+
+.css{
+  width: 70%;
+  animation: css 2s;
+}
+
+.bs{
+  width: 50%;
+  animation: bs 2s;
+}
+
+.js{
+  width: 30%;
+  animation: js 2s;
+}
+
+.react{
+  width: 40%;
+  animation: react 2s;
+}
+
+.rn{
+  width: 40%;
+  animation: rn 2s;
+}
+
+.php{
+  width: 25%;
+  animation: php 2s;
+}
+
+.gh{
+  width: 85%;
+}
+
+/* keyframes to control skills bar animation */
+@keyframes html {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
+}
+@keyframes css {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+@keyframes js {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 30%;
+  }
+}
+@keyframes react {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 40%;
+  }
+}
+@keyframes rn {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 40%;
+  }
+}
+@keyframes bs {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 50%;
+  }
+}
+@keyframes php {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 25%;
+  }
 }

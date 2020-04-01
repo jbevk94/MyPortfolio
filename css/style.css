@@ -20,10 +20,11 @@
   font-family: "PT Sans", sans-serif;
   list-style: none;
 }
- 
+
 body {
   background-color: #1f2833;
 }
+
 .container {
   padding: 0 100px 0 100px;
 }
@@ -33,16 +34,13 @@ nav ul,
 .project-category {
   display: flex;
   flex-wrap: wrap;
-  
+
   justify-content: space-between;
 }
 
 .navbar {
   background-color: #181818;
-  
 }
-
-
 
 header {
   display: flex;
@@ -132,7 +130,6 @@ span.name {
   color: #fff;
 }
 
-
 .text a::before {
   content: "";
   background-color: #45a29e;
@@ -167,6 +164,7 @@ span.name {
   font-size: 10rem;
   z-index: 0;
   opacity: 0.7;
+  padding-top: 120px;
 }
 
 .about-me-info {
@@ -200,11 +198,8 @@ span.name {
   left: calc(100% - 100px);
   right: calc(100% - 100px);
   transform: translateX(calc(-100% + 100px));
-  
 }
 /* About Ends */
-
-
 
 /* Projects Start */
 
@@ -254,37 +249,46 @@ button.active {
 
 /* Projects Ends */
 
+/* Contact Form Starts */
 .contact {
   margin-top: 50px;
 }
-/* form */
 
-form{
-  padding-top: 60px;
-}
-form input,
-form textarea {
-  display: block;
-  width: 500px;
-  padding: 20px;
-  background-color: #252627;
-  border: 3px solid #707070;
-  margin: 20px 0;
-  outline: none;
-  font-size: 1.2rem;
-  color: #fff;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  transform: translateX(-50%);
+.contact-info {
+  padding: 50px;
+  font-size: 30px;
+  color: white;
 }
 
-form input:last-child {
-  width: 150px;
-  background-color: #ed5565;
-  border: none;
-  cursor: pointer;
+.cont-1 {
+  display: flex;
 }
+
+.cont-2 {
+  float: right;
+  display: flex;
+}
+
+.about-info {
+  padding-bottom: 20px;
+}
+
+.comments {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.submit {
+  height: 30px;
+  width: 80px;
+  margin-left: 60px;
+}
+
+input[type="text"] {
+  padding: 5px;
+}
+/* Contact Form Ends */
+
 /* footer */
 footer hr {
   border: 2px solid #707070;
@@ -293,12 +297,19 @@ footer hr {
 
 footer p {
   text-align: center;
+  color: rgb(255, 255, 255);
 }
 
+footer {
+  width: 100%;
+  margin-top: 200px;
+  display: inline-block;
+}
+/* footer ends */
 
 /* New Progress Bar */
 
-.skills{
+.skills {
   width: 90%;
   margin: 60px auto;
   color: white;
@@ -306,7 +317,7 @@ footer p {
   padding-bottom: 30px;
 }
 
-.skills li{
+.skills li {
   margin: 20px 0;
 }
 
@@ -317,7 +328,7 @@ footer p {
   opacity: 0.7;
   padding-top: 100px;
   padding-bottom: 100px;
-} 
+}
 .skills-info {
   font-size: 1.4rem;
   color: #bebebe;
@@ -330,125 +341,194 @@ footer p {
   margin-bottom: 50px;
 }
 
-
-.progress-title{
+.progress-title {
   font-size: 8rem;
-  color:#45a29e;
+  color: #45a29e;
 }
 
 .progress-title:hover {
   color: whitesmoke;
 }
 
-.bar{
+.bar {
   background: rgb(0, 0, 0);
   display: block;
   height: 2px;
-  border: 1px solid rgba(0,0,0,0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 0 10px #2187e7b3;
 }
 
-.bar span{
+.bar span {
   height: 2px;
   float: left;
   background: #ffffff;
 }
 /* Skill bar width */
-.html{
+.html {
   width: 90%;
   animation: html 2s;
 }
 
-.css{
+.css {
   width: 70%;
   animation: css 2s;
 }
 
-.bs{
+.bs {
   width: 50%;
   animation: bs 2s;
 }
 
-.js{
+.js {
   width: 30%;
   animation: js 2s;
 }
 
-.react{
+.react {
   width: 40%;
   animation: react 2s;
 }
 
-.rn{
+.rn {
   width: 40%;
   animation: rn 2s;
 }
 
-.php{
+.php {
   width: 25%;
   animation: php 2s;
 }
 
-.gh{
+.gh {
   width: 85%;
 }
 
 /* keyframes to control skills bar animation */
 @keyframes html {
-  0%{
+  0% {
     width: 0%;
   }
-  100%{
+  100% {
     width: 90%;
   }
 }
 @keyframes css {
-  0%{
+  0% {
     width: 0%;
   }
-  100%{
+  100% {
     width: 70%;
   }
 }
 @keyframes js {
-  0%{
+  0% {
     width: 0%;
   }
-  100%{
+  100% {
     width: 30%;
   }
 }
 @keyframes react {
-  0%{
+  0% {
     width: 0%;
   }
-  100%{
+  100% {
     width: 40%;
   }
 }
 @keyframes rn {
-  0%{
+  0% {
     width: 0%;
   }
-  100%{
+  100% {
     width: 40%;
   }
 }
 @keyframes bs {
-  0%{
+  0% {
     width: 0%;
   }
-  100%{
+  100% {
     width: 50%;
   }
 }
 @keyframes php {
-  0%{
+  0% {
     width: 0%;
   }
-  100%{
+  100% {
     width: 25%;
+  }
+}
+
+/* Tablets
+@media only screen and (min-width: 768px) {
+  
+} */
+
+/* Phones */
+@media only screen and (max-width: 600px) {
+  /* header */
+
+  .container {
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  nav a {
+    font-size: 10px;
+  }
+
+  .text p {
+    font-size: 12px;
+  }
+
+  /* heaader ends */
+  .about h1,
+  .projects h1,
+  .contact h1,
+  .skills h1 {
+    font-size: 30px;
+    padding-top: 0;
+  }
+  /* About starts */
+  .profile-image img {
+    display: none;
+  }
+  .about {
+    margin-top: 0;
+  }
+
+  .about-me-info {
+    width: 70%;
+  }
+
+  .about img {
+    display: none;
+  }
+
+  /* Skills Starts */
+
+  .skills {
+    width: 70%;
+    margin: 20px auto;
+  }
+
+  .progress-title {
+    font-size: 20px;
+  }
+
+  /* Projects Start */
+
+  div[class^="category-"] {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: none;
+    grid-gap: 20px;
   }
 }
